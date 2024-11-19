@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookstore SYSTEM "books.dtd">
+<bookstore>
+    <book>
+        <title>Learning XML</title>
+        <author>John Doe</author>
+        <isbn>978-1234567890</isbn>
+        <publisher>ABC Publications</publisher>
+        <edition>2nd</edition>
+        <price>39.99</price>
+    </book>
+    <book>
+        <title>Mastering AI</title>
+        <author>Jane Smith</author>
+        <isbn>978-0987654321</isbn>
+        <publisher>XYZ Publishers</publisher>
+        <edition>1st</edition>
+        <price>49.99</price>
+    </book>
+</bookstore>

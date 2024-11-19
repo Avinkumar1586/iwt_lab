@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Tags Chart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.627);
+        }   
+        h1{
+            font-family: Georgia, serif;
+            color: black;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            
+        }
+        th {
+            font-weight: bold;
+            background-color: skyblue;
+            text-align: center;
+            padding: 10px;
+            
+        }
+        td {
+            
+            padding: 10px;
+            vertical-align: top;
+        }
+        table,th,td{
+            border: 1px double rgba(53, 99, 225, 0.77);
+        }
+        code {
+            background-color: #f9f9f9;
+            padding: 5px;
+            display: block;
+            white-space: pre;
+        }
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+        function toggleVisibility(codeId, viewId) {
+            var codeElement = document.getElementById(codeId);
+            var viewElement = document.getElementById(viewId);
+            if (codeElement.classList.contains('hidden')) {
+                codeElement.classList.remove('hidden');
+                viewElement.classList.remove('hidden');
+            } else {
+                codeElement.classList.add('hidden');
+                viewElement.classList.add('hidden');
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+    <h1>HTML Tags Chart</h1>
+    <p>To use any of the following HTML tags, simply select the HTML code you'd like and copy and paste it into your web page.</p>
+    <table>
+        <tr>
+            <th>Tag</th>
+            <th>Name</th>
+            <th >Code Example</th>
+            <th >Browser View</th>
+        </tr>
+        <tr>
+            <td>&lt;!-- --&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('a-code', 'a-view');">Comment</a></td>
+            <td class="hidden" id="a-code">
+                <code>&lt;!--This can be viewed in the HTML part of a document--&gt;</code></td>
+            <td class="hidden" id="a-view">
+                Nothing will show.
+            </td>
+
+        </tr>
+        <tr>
+            <td>&lt;a&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('b-code', 'b-view');">Anchor</a></td>
+            <td class="hidden" id="b-code">
+                <code>&lt;a href="http://www.google.com"&gt;Visit google&lt;/a&gt;</code>
+            </td>
+            <td class="hidden" id="b-view">
+                <a href="http://www.google.com">Click to open</a>
+            </td>
+
+        </tr>
+        <tr>
+            <td>&lt;b&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('c-code', 'c-view');">Bold</a></td>
+            <td class="hidden" id="c-code">
+                <code>&lt;b&gt;Example&lt;/b&gt;</code>
+            </td>
+            <td class="hidden" id="c-view">
+                <b>Example</b>
+            </td>
+
+        </tr>
+        <tr>
+            <td>&lt;big&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('d-code', 'd-view');">big(text)</a></td>
+            <td class="hidden" id="d-code">
+                <code>&lt;big&gt;Example&lt;/big&gt;</code>
+            </td>
+            <td class="hidden" id="d-view">
+                <big>Example</big>
+            </td>
+
+        </tr>
+        <tr>
+            <td>&lt;body&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('e-code', 'e-view');">Body of HTML document</a></td>
+            <td class="hidden" id="e-code">
+                <code>&lt;body&gt;The content of your HTML page&lt;/body&gt;</code>
+            </td>
+            <td class="hidden" id="e-view">
+                The content of your web page(Body part)
+            </td>
+
+        </tr>
+        <tr>
+            <td>&lt;br&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('f-code', 'f-view');">Line break</a></td>
+            <td class="hidden" id="f-code">
+                <code>The contents of your page&lt;br&gt;The contents of your page</code>
+            </td>
+            <td class="hidden" id="f-view">
+                The contents of your page<br>The contents of your page.
+            </td>
+            
+        </tr>
+        <tr>
+            <td>&lt;center&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('g-code', 'g-view');">center</a></td>
+            <td class="hidden" id="g-code">
+                <code>&lt;center&gt;This will center your contents&lt;/center&gt;</code></td>
+            <td class="hidden" id="g-view">
+                <center>This will center your contents</center>
+            </td>
+        </tr>
+        <tr>
+            <td>&lt;dd&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('h-code', 'h-view');">Definition description</a></td>
+            <td class="hidden" id="h-code">
+                <code>&lt;dl&gt;<br>&lt;dt&gt;Definition Term&lt;/dt&gt;<br>&lt;dd&gt;Definition of the term&lt;/dd&gt;<br>&lt;/dl&gt;</code></td>
+            <td class="hidden" id="h-view">
+                <dl>
+                    <dt>Definition Term</dt>
+                    <dd><b>Definition of the term</b></dd>
+                </dl>
+            </td>
+        </tr>
+
+        <tr>
+            <td>&lt;dl&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('i-code', 'i-view');">Definition list</a></td>
+            <td class="hidden" id="i-code">
+                <code>&lt;dl&gt;<br>&lt;dt&gt;Definition Term&lt;/dt&gt;<br>&lt;dd&gt;Definition of the term&lt;/dd&gt;<br><br>&lt;dt&gt;Definition Term&lt;/dt&gt;<br>&lt;dd&gt;Definition of the term&lt;/dd&gt;<br>&lt;/dl&gt;</code></td>
+            <td class="hidden" id="i-view">
+                <dl>
+                    <dt>Definition Term</dt>
+                    <dd>Definition of the term</dd>
+                    <dt>Definition Term</dt>
+                    <dd>Definition of the term</dd>
+                </dl>                    
+            </td>
+        </tr>
+
+        <tr>
+            <td>&lt;dt&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('j-code', 'j-view');">Definition term</a></td>
+            <td class="hidden" id="j-code">
+                <code>&lt;dl&gt;<br>&lt;dt&gt;Definition Term&lt;/dt&gt;<br>&lt;dd&gt;Definition of the term&lt;/dd&gt;<br>&lt;/dl&gt;</code></td>
+            <td class="hidden" id="j-view">
+                <dl>
+                    <dt><b>Definition Term</b></dt>
+                    <dd>Definition of the term</dd>
+                </dl>
+            </td>
+        </tr>
+
+        <tr>
+            <td>&lt;em&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('k-code', 'k-view');">Emphasis</a></td>
+            <td class="hidden" id="k-code">
+                <code>This is an &lt;em&gt;Example&lt;/em&gt; of using the emphasis tag</code></td>
+            <td class="hidden" id="k-view">
+                This is an <em>Example</em> of using the emphasis tag.
+            </td>
+        </tr>
+
+        <tr>
+            <td>&lt;embed&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('l-code', 'l-view');">Embed object</a></td>
+            <td class="hidden" id="l-code">
+                <code>&lt;embed src="yourfile.mid" width="100%" height="60" align="center"&gt;</code></td>
+            <td class="hidden" id="l-view">
+                <embed src="yourfile.mid" width="100%" height="60" align="center">
+            </td>
+        </tr>
+
+        <tr>
+            <td>&lt;embed&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('m-code', 'm-view');">Embed object</a></td>
+            <td class="hidden" id="m-code">
+                <code>&lt;embed src="yourfile.mid" autostart="true" hidden="false" loop="false"&gt;<br>&lt;noembed&gt;&lt;bgsound src="yourfile.mid" loop="1"&gt;&lt;/noembed&gt;</code></td>
+            <td class="hidden" id="m-view">
+                <embed src="yourfile.mid" autostart="true" hidden="false" loop="false"><noembed><bgsound src="yourfile.mid" loop="1"></noembed>
+                Music will begin playing when your page is loaded and will only play one time. A control panel will be displayed to enable your visitors to stop the music.
+            </td>
+        </tr>
+
+        <tr>
+            <td>&lt;font&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('n-code', 'n-view');">Font</a></td>
+            <td class="hidden" id="n-code">
+                <code>&lt;font face="Times New Roman"&gt;Example&lt;/font&gt;</code></td>
+            <td class="hidden" id="n-view">
+                <font face="Times New Roman">Example</font> 
+            </td>
+        </tr>
+    
+        <tr>
+            <td>&lt;font&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('q-code', 'q-view');">Font</a></td>
+            <td class="hidden" id="q-code">
+                <code>&lt;font face="Times New Roman" size="5"&gt;Example&lt;/font&gt;</code>
+            <td class="hidden" id="q-view">
+                <font face="Times New Roman" size="5">Example</font> 
+            </td>
+        </tr>
+        <tr>
+            <td>&lt;font&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('r-code', 'r-view');">Font</a></td>
+            <td class="hidden" id="r-code">
+                <code>&lt;font face="Times New Roman" size="+3" color="#ff0000"&gt;Example&lt;/font&gt;</code></td>
+            <td class="hidden" id="r-view">
+                <font face="Times New Roman" size="+3" color="#ff0000">Example</font></td>
+        </tr>
+
+        <tr>
+            <td>&lt;form&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('s-code', 's-view');">Form</a></td>
+            <td class="hidden" id="s-code">
+                <code>&lt;form action="mailto:you@yourdomain.com"&gt;<br>Name: &lt;input type="text" name="name" size="10"&gt;<br> Email: &lt;input type="text" name="email" size="10"&gt;<br> &lt;input type="submit" value="Submit"&gt;<br>&lt;/form&gt;</code></td>
+            <td class="hidden" id="s-view">
+                <form action="mailto:you@yourdomain.com">
+                    Name: <input type="text" name="name" size="10"><br>
+                    Email: <input type="text" name="email" size="10"><br>
+                    <center><input type="submit" value="Submit"></center>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>&lt;h1&gt; - &lt;h6&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('t-code', 't-view');">Headings</a></td>
+            <td class="hidden" id="t-code"><code>&lt;h1&gt;Heading 1&lt;/h1&gt;<br>&lt;h2&gt;Heading 2&lt;/h2&gt;<br>&lt;h3&gt;Heading 3&lt;/h3&gt;<br>&lt;h4&gt;Heading 4&lt;/h4&gt;<br>&lt;h5&gt;Heading 5&lt;/h5&gt;<br>&lt;h6&gt;Heading 6&lt;/h6&gt;</code></td>
+            <td class="hidden" id="t-view">
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
+            </td>
+
+        </tr>
+        <tr>
+            <td>&lt;head&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('u-code', 'u-view');">Heading of HTML document</a></td>
+            <td class="hidden" id="u-code">
+                <code>&lt;head&gt;Contains elements describing the document&lt;/head&gt;</code></td>
+            <td class="hidden" id="u-view">
+                Nothing will show</td>
+        </tr>
+        <tr>
+            <td>&lt;hr&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('v-code', 'v-view');">Horizontal Rule</a></td>
+            <td class="hidden" id="v-code">
+                <code>&lt;hr width="50%" size="3" noshade&gt;</code></td>
+            <td class="hidden" id="v-view">
+                <center>Content of webpage</center>
+            <hr width="50%" size="3" noshade>
+                <center>Content of webpage</center>
+            </td>
+        </tr>
+        <tr>
+            <td>&lt;hr&gt;(Internet explorer)</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('v1-code', 'v1-view');">Horizontal Rule</a></td>
+            <td class="hidden" id="v1-code">
+                <code>&lt;hr width="50%"  color="#ff0000" size="3" &gt;</code></td>
+            <td class="hidden" id="v1-view">
+                <center>Content of webpage</center>
+            <hr width="50%" color="#ff0000" size="3">
+                <center>Content of webpage</center>
+            </td>
+        </tr>
+        <tr>
+            <td>&lt;html&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('ht1-code', 'ht1-view');">hypertext markup language</a></td>
+            <td class="hidden" id="ht1-code">
+                <code>&lt;html&gt;<br>...<br>&lt;/html&gt;</code>
+            <td class="hidden" id="ht1-view">
+                <html>
+                <head>
+                <meta>
+                <title>Title of your web page</title>
+                </head>
+                <body align="center">HTML web page contents
+                </body>
+                </html>
+            </td>
+        </tr>
+
+        <tr>
+            <td>&lt;i&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('i1-code', 'i1-view');">Italic</a></td>
+            <td class="hidden" id="i1-code">
+                <code>&lt;i&gt;Example&lt;/i&gt;</code>
+            </td>
+            <td class="hidden" id="i1-view">
+                <i>Example</i>
+            </td>
+        </tr>
+
+        <tr>
+            <td>&lt;img&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('img-code', 'img-view');">Image</a></td>
+            <td class="hidden" id="img-code">
+                <code>&lt;img src="C:\Users\AVIN KUMAR\web\pu.jpeg" alt="Sample image" 
+                    width="41" height="41" border="0" &gt;</code>
+            </td>
+            <td class="hidden" id="img-view">
+                <img src="C:\Users\AVIN KUMAR\web\pu.jpeg" alt="Image of Pondicherry university">
+            </td>
+        </tr>
+
+        <tr>
+            <td>&lt;input&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('inp-code', 'inp-view');">Input Field</a></td>
+            <td class="hidden" id="inp-code">
+                Example 1:<br>
+                <code>Name: &lt;input type="text" name="name"&gt;&lt;input type="submit" value="Submit"&gt;</code><br>
+                Example 2:<br>
+                <code>Gender: &lt;input type="radio" name="gender" value="male"&gt;Male&lt;br&gt;<br>&lt;input type="radio" name="gender" value="female"&gt;Female&lt;br&gt;<br>&lt;input type="submit" value="Submit"&gt;</code><br>
+                Example 3:<br>
+                <code>&lt;input type="checkbox" name="vehicle" value="Bike"&gt;I have a bike&lt;br&gt;<br>&lt;input type="checkbox" name="vehicle" value="Car"&gt;I have a car&lt;br&gt;<br>&lt;input type="submit" value="Submit"&gt;</code><br>
+                Example 4:<br>
+                <code>Password: &lt;input type="password" name="pwd"&gt;&lt;input type="submit" value="Submit"&gt;</code><br>
+                Example 5:<br>
+                <code>Address:&lt;textarea wrap="virtual"name="Comments"rows=3cols=20maxlength=100&gt;&lt;/textarea&gt;
+                &lt;input type="submit" value="Submit"&gt;&lt;input type="reset" name="clear"&gt;</code><br><br>
+                Example 6: <br>
+                <code>Select an option:
+                    &lt;select&gt;&lt;option selected&gt;option 1&lt;option&gt;
+                    &lt;option&gt;option 2&lt;option&gt;
+                    &lt;option&gt;option 3&lt;option&gt;
+                    &lt;option&gt;option 4&lt;option&gt;&lt;select&gt;
+                    &lt;input type="submit" value="Submit"&gt;
+                </code><br>
+                Example 7:<br>
+                <code>&lt;input type="reset" value="Reset"&gt;&lt;input type="submit" value="Submit"&gt;</code>
+            </td>
+            <td class="hidden" id="inp-view">
+                <form method=post action="/cggbin/example.cgi">
+
+                Example 1:<br>
+                Name: <br> <input type="text" name="name"><input type="submit" value="Submit"><br><br>
+
+                Example 2:<br>
+                Gender:<br>
+                <input type="radio" name="gender" value="male">Male<br>
+                <input type="radio" name="gender" value="female">Female<br>
+                <input type="submit" value="Submit"><br><br>
+
+                Example 3:<br>
+                <input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
+                <input type="checkbox" name="vehicle" value="Car">I have a car<br>
+                <input type="submit" value="Submit"><br><br>
+
+                Example 4:<br>
+                Password: <br>
+                <input type="password" name="pwd"><input type="submit" value="Submit"><br><br>
+
+                Example 5:<br>
+                Address : <br>
+                <textarea wrap="virtual" name="Comments" rows=3 cols=20 maxlength=100></textarea><br>
+                <input type="submit" value="Submit">
+                <input type="reset" name="clear"><br><br>
+
+                Example 6:<br>
+                    Select an option:
+                    <select>
+                    <option selected>option 1</option>
+                    <option >option 2</option>
+                    <option>option 3</option>
+                    <option>option 4</option>
+                    </select><br>
+                    <input type="Submit"value="Submit"><br><br>
+                Example 7:<br>
+                <input type="reset" value="Reset"><input type="submit" value="Submit"><br>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>&lt;li&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('li-code', 'li-view');">List Item</a></td>
+            <td class="hidden" id="li-code">
+                Example 1:<br>
+                <code>&lt;menu&gt;<br>&lt;li type="disc"&gt;List item 1&lt;/li&gt;
+                    <br>&lt;li type="circle"&gt;List item 2&lt;/li&gt;
+                    <br>&lt;li type="square"&gt;List item 3&lt;/li&gt;&lt;menu&gt;
+                </code><br><br>
+                Example 2:<br>
+                <code>&lt;ol type="i"&gt;<br>
+                &lt;/List item 1&gt;
+                &lt;/List item 2&gt;
+                &lt;/List item 3&gt;
+                &lt;/List item 4&gt;&lt;/ol&gt;</code>
+            </td>
+            <td class="hidden" id="li-view">
+            Example 1:<br>
+                <menu>
+                <li type="disc">List item 1</li>
+                <li type="circle">List item 2</li>
+                <li type="square">List item 3</li>
+                </MENU><br><br> 
+            Example 2:<br>
+            <ol type="i">
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+                <li>List Item 4</li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>&lt;link&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('link-code', 'link-view');">Link</a></td>
+            <td class="hidden" id="link-code">
+                <code>&lt;head&gt;&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;&lt;/head&gt;</td></code>
+            </td>
+        </tr>
+        <tr>
+            <td>&lt;marquee&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('ma-code', 'ma-view');">scrolling text</a></td>
+            <td class="hidden" id="ma-code">
+                <code>&lt;marquee bgcolor="#cccccc" loop="-1"scrollamount="2" width="100%"&gt;Example Marquee&lt;/marquee&gt;</code>
+            </td>
+            <td class="hidden" id="ma-view">
+                <marquee bgcolor="#cccccc" loop="-1"scrollamount="2" width="100%">Example Marquee</marquee>
+            </td>
+        </tr>
+        <tr>
+            <td>&lt;meta&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('m1-code', 'm1-view');">Meta</a></td>
+            <td class="hidden" id="m1-code"><code>&lt;meta name="Description" content="Description of your site"&gt;<br>&lt;meta name="keywords" content="keywords describing your site"&gt;
+            </code></td>
+            <td class="hidden" id="m1-view">Nothing will show</span></td>
+        </tr>
+        <tr>
+            <td>&lt;meta&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('m2-code', 'm2-view');">Meta</a></td>
+            <td class="hidden" id="m2-code"><code>&lt;meta http-equiv="Refresh" CONTENT="4;URL=http://www.yourdomain.com/"&gt;</code></td>
+            <td class="hidden" id="m2-view">Nothing will show </td>
+        </tr>
+        <tr>
+            <td>&lt;meta&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('m3-code', 'm3-view');">Meta</a></td>
+            <td class="hidden" id="m3-code"><code>&lt;meta http-equiv="Pragma" content="no-cache"&gt;</code></td>
+            <td class="hidden" id="m3-view">Nothing will show</td>
+        </tr>
+        <tr>
+            <td>&lt;meta&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('m4-code', 'm4-view');">Meta</a></td>
+            <td class="hidden" id="m4-code"><code>&lt;meta name="rating" content="General"&gt;</code></td>
+            <td class="hidden" id="m4-view">Nothing will show </td>
+        </tr>
+        <tr>
+            <td>&lt;meta&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('m5-code', 'm5-view');">Meta</a></td>
+            <td class="hidden" id="m5-code"><code>&lt;meta name="robots" content="all"&gt;</code></td>
+            <td class="hidden" id="m5-view">Nothing will show </span></td>
+        </tr>
+        <tr>
+            <td>&lt;meta&gt;</td>
+            <td><a href="javascript:void(0);" onclick="toggleVisibility('m6-code', 'm6-view');">Meta</a></td>
+            <td class="hidden" id="m6-code"><code>&lt;meta name="robots" content="noindex,follow"&gt;</code></td>
+            <td class="hidden" id="m6-view">Nothing will show </span></td>
+        </tr>
+</table>
+</div>
+</body>
+</html>

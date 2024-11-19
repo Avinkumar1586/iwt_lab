@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Book Bliss</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="top-frame">
+            <div class="logo-container">
+                <img src="bookbliss.png" alt="Book Bliss Logo" class="logo">
+                <h1>Book Bliss</h1>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="login.html">Login</a>
+                <a href="registration.html">Registration</a>
+                <a href="catalogue.html">Catalogue</a>
+                <a href="cart.html">Cart</a>
+            </nav>
+        </div>
+        <div class="main-content">
+            <div class="left-frame">
+                <ul>
+                    <h3>Categories</h3>
+                    <li><a href="cse.html">CSE</a></li>
+                    <li><a href="ece.html">ECE</a></li>
+                    <li><a href="eee.html">EEE</a></li>
+                    <li><a href="civil.html">CIVIL</a></li>
+                </ul>
+            </div>
+            <div class="right-frame">
+                <h2>Cart</h2>
+                <table id="cart-table">
+                    <tr>
+                        <th>Book</th>
+                        <th>Author</th>
+                        <th>Publisher</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                    <!-- Cart items will be injected here by JavaScript -->
+                </table>
+                <p id="empty-message">Your cart is currently empty.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
