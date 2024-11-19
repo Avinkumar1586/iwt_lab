@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image and Link Styles</title>
+    <style>
+        /* Full page background image */
+        body {
+            background-image: url('background.jpg');
+            background-repeat: repeat; /* Tiles the image */
+            background-size: cover; /* Ensures the image covers the entire page */
+        }
+
+        /* Background image for a specific element */
+        .example {
+            width: 300px;
+            height: 300px;
+            background-image: url('element-background.jpg');
+            background-repeat: no-repeat; /* No tiling */
+            background-size: cover; /* Scale the image to cover the element */
+            border: 1px solid #000; /* For visualization purposes */
+        }
+
+        /* Link styles */
+        a:link {
+            text-decoration: none;
+        }
+
+        a:visited {
+            text-decoration: none;
+        }
+
+        a:active {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: red;
+        }
+    </style>
+</head>
+<body> 
+    <div class="example">
+        <p>This is a div with a background image.</p>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#Contacts"></a>Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

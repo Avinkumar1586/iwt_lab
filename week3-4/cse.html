@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE Catalogue - Book Bliss</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="top-frame">
+            <div class="logo-container">
+                <img src="bookbliss.png" alt="Book Bliss Logo" class="logo">
+                <h1>Book Bliss</h1>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="login.html">Login</a>
+                <a href="registration.html">Registration</a>
+                <a href="catalogue.html">Catalogue</a>
+                <a href="cart.html">Cart</a>
+            </nav>
+        </div>
+        <div class="main-content">
+            <div class="left-frame">
+                <ul>
+                    <h3>Categories</h3>
+                    <li><a href="cse.html">CSE</a></li>
+                    <li><a href="ece.html">ECE</a></li>
+                    <li><a href="eee.html">EEE</a></li>
+                    <li><a href="civil.html">CIVIL</a></li>
+                </ul>
+            </div>
+            <div class="right-frame">
+                <h2>CSE Catalogue</h2>
+                <table>
+                    <tr>
+                        <th>Cover</th>
+                        <th>Book</th>
+                        <th>Author</th>
+                        <th>Publisher</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td><img src="book1.jpeg" alt="XML Bible" style="height: 50px;"></td>
+                        <td>XML Bible</td>
+                        <td>Winston</td>
+                        <td>Wiely</td>
+                        <td>Rs 40.5</td>
+                        <td><button onclick="addToCart('XML Bible',40.5)">Add to cart</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="book3.jpeg" alt="Java 2" style="height: 50px;"></td>
+                        <td>Java 2</td>
+                        <td>Watson</td>
+                        <td>BPB Publications</td>
+                        <td>Rs 35.5</td>
+                        <td><button onclick="addToCart('Java 2',  35.5)">Add to cart</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

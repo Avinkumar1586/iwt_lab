@@ -1,0 +1,140 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.627);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.top-frame {
+    text-align: center;
+    background-color: #3b5998;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 75px;
+    height: auto;
+    margin-right: 10px;
+}
+
+h1 {
+    font-family: 'Times New Roman', serif;
+    color: white;
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    max-width: 1200px;
+}
+
+.left-frame {
+    width: 20%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.left-frame ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.left-frame li {
+    margin-bottom: 10px;
+}
+
+.left-frame a {
+    color: #3b5998;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.left-frame a:hover {
+    text-decoration: underline;
+}
+
+.right-frame {
+    width: 75%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.right-frame h2 {
+    margin-top: 0;
+    color: #3b5998;
+}
+
+.right-frame table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.right-frame th, .right-frame td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.right-frame th {
+    background-color: #f4f4f4;
+}
+
+.right-frame button {
+    padding: 10px 15px;
+    background-color: #3b5998;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.right-frame button:hover {
+    background-color: #333;
+}
