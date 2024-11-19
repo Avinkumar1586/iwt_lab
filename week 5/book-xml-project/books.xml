@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE books SYSTEM "books.dtd">
+<?xml-stylesheet type="text/xsl" href="books.xsl"?>
+<books>
+    <book>
+        <title>The Great Gatsby</title>
+        <author>F. Scott Fitzgerald</author>
+        <isbn>978-0743273565</isbn>
+        <publisher>Scribner</publisher>
+        <edition>First Edition</edition>
+        <price>12.99</price>
+    </book>
+    <book>
+        <title>To Kill a Mockingbird</title>
+        <author>Harper Lee</author>
+        <isbn>978-0446310789</isbn>
+        <publisher>Warner Books</publisher>
+        <edition>Trade Paperback</edition>
+        <price>14.99</price>
+    </book>
+</books>
